@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="flightcss.css"> 
+    </head>
+    <body>
+        <div class="grid_container" >
+            <header class="header">
+            </header>
+            <aside class="sidenav">
+                <div>
+                    <div class="icon"><img src="flight.png" height="60px" width="60px"></div>
+                     <div class="title"><h1>FLIGHT</h1><h6>SEARCH ENGINE</h6></div>
+                </div>
+                <div class="inputs">
+                    <form id="search_form" onsubmit="process(document.getElementById('origin').value, document.getElementById('dest').value)">
+                        <h3 style="color: white;">One Way</h3><br>
+                        <input type="text" placeholder="Enter Origin" id="origin">
+                        <input type="text" placeholder="Enter Destination" id="dest">
+                        <input placeholder="Departure date" class="textbox-n" type="text" onfocus="(this.type='date')" id="depdate">
+                        <input type="number" placeholder="Passengers" id="count">
+                        <button  class="button">SEARCH</button>
+                        
+                    </form>
+                </div>
+            </aside>
+            <main class="main">
+            <div class="details">
+                <div id="fromto" style="font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "></div>
+                <div id="dates"></div>
+            </div>
+          <div id="info"></div>
+            </main>
+        </div>
+        <footer class="footer"></footer>
+    </body>
+    <script src="flight.js" type="text/javascript"></script>
+</html>
